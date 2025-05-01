@@ -1,1 +1,18 @@
+#ifndef BUILDER_H
+#define BUILDER_H
 
+#include <string>
+
+class Builder {
+public:
+    virtual ~Builder() {}
+    virtual void setEngine(const std::string& engine) = 0;
+    virtual void setSeats(const std::string& seats) = 0;
+    virtual void setTripComputer(const std::string& tripComputer) = 0;
+    virtual void setGPS(const std::string& gps) = 0;
+    virtual void setColor(const std::string& color) = 0;
+    virtual void setSunroof(bool hasSunroof) = 0;
+    virtual void reset() = 0;
+};
+
+#endif

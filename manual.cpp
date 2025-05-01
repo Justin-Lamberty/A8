@@ -1,9 +1,12 @@
 #include "manual.h"
 #include <iostream>
+
 void Manual::listFeatures() const {
-    std::cout << "Manual Features: ";
-    std::cout << "\n  Engine: " << engine;
-    std::cout << "\n  Seats: " << seats;
-    std::cout << "\n  TripComputer: " << tripComputer;
-    std::cout << "\n  GPS: " << gps << "\n";
+    std::cout << "Manual Features:\n";
+    std::cout << "  Engine: " << engine << "\n";
+    std::cout << "  Seats: " << seats << "\n";
+    std::cout << "  TripComputer: " << tripComputer << "\n";
+    std::cout << "  GPS: " << gps << "\n";
+    std::cout << "  Color: " << color << "\n";
+    std::cout << "  Sunroof: " << (hasSunroof ? "Yes" : "No") << "\n";
 }

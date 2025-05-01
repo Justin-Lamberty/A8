@@ -5,6 +5,7 @@
 #include "manual.h"
 #include "director.h"
 #include "clientcode.h"
+#include <iostream>
 TEST_CASE("ClientCode4 Luxury Car and Manual Test", "[ClientCode4]") {
 Director *director = new Director();
 auto [luxuryCar, luxuryManual] = ClientCode4(*director);
